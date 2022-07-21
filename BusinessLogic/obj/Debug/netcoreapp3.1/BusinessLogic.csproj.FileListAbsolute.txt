@@ -1,0 +1,15 @@
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\BusinessLogic.deps.json
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\BusinessLogic.dll
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\BusinessLogic.pdb
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\Common.dll
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\DataAccess.dll
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\Common.pdb
+G:\Projects\SmartMining\MCS\BusinessLogic\bin\Debug\netcoreapp3.1\DataAccess.pdb
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.csproj.AssemblyReference.cache
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.AssemblyInfoInputs.cache
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.AssemblyInfo.cs
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.csproj.CoreCompileInputs.cache
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.csproj.CopyComplete
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.dll
+G:\Projects\SmartMining\MCS\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.pdb

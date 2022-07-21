@@ -1,0 +1,16 @@
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\DataAccess.EFCore.deps.json
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\DataAccess.EFCore.runtimeconfig.json
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\DataAccess.EFCore.runtimeconfig.dev.json
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\DataAccess.EFCore.dll
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\DataAccess.EFCore.pdb
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\Common.dll
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\bin\Debug\netcoreapp3.1\Common.pdb
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.csproj.AssemblyReference.cache
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.AssemblyInfoInputs.cache
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.AssemblyInfo.cs
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.csproj.CoreCompileInputs.cache
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.csproj.CopyComplete
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.dll
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.pdb
+G:\Projects\SmartMining\MCS\DataAccess.EFCore\obj\Debug\netcoreapp3.1\DataAccess.EFCore.genruntimeconfig.cache

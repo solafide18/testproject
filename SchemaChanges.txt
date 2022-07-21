@@ -1,0 +1,718 @@
+2021-12-13
+* Table: employee
+* View: vw_employee
+- is_employee_active
++ is_valid boolean?
+Alter view employee definition
+
+* Table: rainfall
+* View: rainfall
++ is_valid boolean?
+
+* Table: slippery
+* View: slippery
++ is_valid boolean?
+
+* Table: analyte
+* View: analyte
++ is_valid boolean?
+
+* Table: bank
+* View: bank
++ is_valid boolean?
+
+* Table: bank_account
+* View: bank_account
++ is_valid boolean?
+
+* Table: contractor
+* View: contractor
++ is_valid boolean?
+
+* Table: coa
+* View: coa
++ is_valid boolean?
+
+* Table: country
+* View: country
++ is_valid boolean?
+
+* Table: currency
+* View: currency
++ is_valid boolean?
+
+* Table: customer
+* View: customer
++ is_valid boolean?
+
+* Table: document_type
+* View: document_type
++ is_valid boolean?
+
+* Table: equipment
+* View: equipment
++ is_valid boolean?
+
+* Table: event_definition_category
+* View: event_definition_category
++ is_valid boolean?
+
+* Table: incident_category
+* View: incident_category
++ is_valid boolean?
+
+* Table: price_index
+* View: price_index
++ is_valid boolean?
+
+* Table: processing_category
+* View: processing_category
++ is_valid boolean?
+
+* Table: product
+* View: product
++ is_valid boolean?
+
+* Table: product_category
+* View: product_category
++ is_valid boolean?
+
+* Table: joint_survey
++ quantity_carry_over numeric?
++ mine_location_id text
++ stockpile_location_id text
++ port_location_id text
++ waste_location_id text
+
+* View: vw_joint_survey
++ quantity_carry_over numeric?
++ mine_location_id text
++ mine_location_code text
++ mine_location_name text
++ stockpile_location_id text
++ stockpile_location_code text
++ stockpile_location_name text
++ port_location_id text
++ port_location_code text
++ port_location_name text
++ waste_location_id text
++ waste_location_code text
++ waste_location_name text
+
+
+2021-12-14
+* Table: rainfall
++ uom_id text
+
+* Table: haze
++ uom_id text
+
+* Table: slippery
++ uom_id text
+
+* View: vw_rainfall
++ uom_id
++ uom_symbol
++ uom_name
+
+* View: vw_haze
++ uom_id
++ uom_symbol
++ uom_name
+
+* View: vw_slippery
++ uom_id
++ uom_symbol
++ uom_name
+
+2021-12-14
+* Table: quality_sampling
++ despatch_order_id text
+
+* View: vw_quality_sampling
++ despatch_order_id
++ despatch_order_number
+
+2021-12-20
+* Table : analyte, bank, bank_account, coa, contractor, country, currency, customer, document_type, employee, equipment, equipment_type, event_definition_category, price_index, processing_category, product, product_category, sampling_template, shift, shift_category, tax, train, tug, uom, uom_category, vessel, wagon, waste, waste_category, waste_location
+* View : vw_analyte,vw_bank,vw_bank_account,vw_coa,vw_contractor,vw_country,vw_currency,vw_customer,vw_document_type,vw_employee,vw_equipment,vw_equipment_type,vw_event_definition_category,vw_price_index,vw_processing_category,vw_product,vw_product_category,vw_sampling_template,vw_shift,vw_shift_category,vw_tax,vw_train,vw_tug,vw_uom,vw_uom_category,vw_vessel,vw_wagon,vw_waste,vw_waste_category,vw_waste_location
+- is_valid
+
+2021-12-25 in 172.16.10.93
+* Table: joint_survey
++ quantity_carry_over numeric
++ distance_carry_over numeric
++ elevation_carry_over numeric
+
+* Table: equipment_cost_rate
++ code
++ name
+
+* Table: truck_cost_rate
++ code
++ name
+
+* View: vw_joint_survey
++ quantity_carry_over numeric
++ distance_carry_over numeric
++ elevation_carry_over numeric
+
+* View: vw_equipment_cost_rate
++ code
++ name
+
+* View: vw_truck_cost_rate
++ code
++ name
+
+2021-12-27 in mcs@172.16.10.93
++ Table: stock_state_analyte
++ View: vw_stock_state_analyte
+
+* Table: daywork
++ daywork_type (text)
+* View: vw_daywork
++ daywork_type
+
+2021-12-28 in mcs@172.16.10.93
+* Table: rainfall, haze, slippery, tidalwave
++ shift_id (text)
+* View: vw_rainfall, vw_haze, vw_slippery, vw_tidalwave
+
+2021-12-27 in mcs@172.16.10.93
+* Table: stock_state_analyte
++ moving_avg_value decimal null
+* View: vw_stock_state_analyte
++ moving_avg_value decimal null
+
+2022-01-09
+=======================================
+				Table 
+=======================================
+barging_transaction
++ draft_survey_id
+
+=======================================
+				View
+=======================================
+vw_barging_transaction:
++ r.draft_survey_id
++ ds.survey_date AS draft_survey_date
++ ds.survey_number AS draft_survey_date
+
+vw_barging_transaction
++ despatch_order_id
++ delivery_term_name
+
+vw_shapping_transaction
++ delivery_term_name
+
+2022-01-10
+=======================================
+				View
+=======================================
+add view: vw_despatch_order_product_specifications
+
+2022-01-11
+=======================================
+				View
+=======================================
+set field id as a primary key on table despatch_order_product_specifications
+
+
+***************************************
+2022-01-12
+=======================================
+				Table 
+=======================================
+sampling_template
++ is_despatch_order_required
+
+despatch_order
++ port_location_id
+
+=======================================
+				View
+=======================================
+vw_sampling_template
++ r.is_despatch_order_required
+
+vw_port_location_id
++ r.port_location_id
++ pl.stock_location_name AS port_location_name
+
+
+
+***************************************
+2022-01-13
+=======================================
+				View
+=======================================
+vw_despatch_order
++ draft_survey_id
++ draft_survey_number
++ draft_survey_date
++ draft_survey_quantity
+
+
+***************************************
+2022-01-17
+=======================================
+				View
+=======================================
+vw_despatch_order
++ quality_sampling_number
+
+***************************************
+2022-01-19
+=======================================
+				View
+=======================================
+vw_despatch_order
++ despatch_order_id
+
+2022-01-21
+=======================================
+				View
+=======================================
+add view: vw_sales_plan_customer_list
+
+
+2022-01-28
+=======================================
+				Table
+=======================================
+table despatch_order
++ surveyor_id
++ shipping_agent
+
+=======================================
+				View
+=======================================
+vw_despatch_order
++ surveyor_id
++ surveyor_code
++ surveyor_name
++ shipping_agent
+
+2022-01-29
+=======================================
+				View
+=======================================
+vw_despatch_order
++ b.vehicle_name AS barge_name
+- r.product_id
++ scp.product_id
++ pr.product_name
+
+2022-01-29
+=======================================
+				View
+=======================================
+vw_barging_transaction
++ doo.contract_product_id
+- r.product_id
++ scp.product_id
++ prd.product_name
+
+2022-01-30
+=======================================
+				Table
+=======================================
+table barging_transaction
+(*) Set product_id null required to false
+
+table shipping_transaction
+(*) Set product_id null required to false
+
+2022-02-03
+=======================================
+				Table
+=======================================
+table draft_survey
++ bill_lading_date
++ bill_lading_number
+
+=======================================
+				View
+=======================================
+vw_draft_survey
++ bill_lading_date
++ bill_lading_number
+
+2022-02-06
+=======================================
+				Table
+=======================================
++ table sales_invoice_attacment
+
+=======================================
+				View
+=======================================
++ view vw_sales_invoice_attachment
+
+
+2022-02-09
+=======================================
+				Table
+=======================================
+* Table sales_contract_despatch_demurrage_term
++ loading_rate_geared
++ loading_rate_gearless
+
+=======================================
+				View
+=======================================
+* View vw_sales_contract_despatch_demurrage_term
++ r.loading_rate_geared
++ r.loading_rate_gearless
+
+2022-02-10 s/d 2022-02-13
+=======================================
+				Table
+=======================================
+* Table despatch_order
++ laytime_duration
++ laytime_text
+
+=======================================
+				View
+=======================================
+* View vw_despatch_order
++ sales_contract_despatch_demurrage_term_id
++ turn_time
++ loading_rate
++ despatch_demurrage_term_rate
++ despatch_demurrage_term_curency_id
++ despatch_percentage
+
+* View vw_despatch_order
++ turn_time
++ loading_rate_geared
++ loading_rate_gearless
++ despatch_demurrage_term_rate
++ despatch_demurrage_term_curency_id
++ despatch_percentage
+
+* View vw_shipment_plan
++ is_geared
+
+==== 2022-02-14 =====
+* Table application_user
+(*) Change uk_application_user => (organization_id, application_user)
+
+
+
+2022-02-15
+=======================================
+				Table
+=======================================
+* Table sales_contract_despatch_demurrage_term
++ loading_rate_geared
++ loading_rate_gearless
+
+=======================================
+				View
+=======================================
+* View vw_despatch_order
++ draft_survey_bill_lading_date
++ draft_survey_bill_lading_number
+
+
+2022-02-17
+=======================================
+				View
+=======================================
+* View vw_sof
++ customer_id
++ business_partner_name
+
+
+2022-02-19
+=======================================
+				Table
+=======================================
+* Table despatch_order
++ loading_rate
++ despatch_demurrage_rate
+
+=======================================
+				View
+=======================================
+* View vw_despatch_order
++ loading_rate
++ despatch_demurrage_rate
++ currency_code
++ currency_name
+
+2022-02-20
+* Please remove existing despatch_order_invoice and vw_despatch_order_invoice
+* Get Create Script from db mcs
+
+
+2022-02-26
+=======================================
+				View
+=======================================
+* View vw_despatch_demurrage_invoice
++ customer_name
++ valuation_target_type
++ ship_to_name
+
+2022-02-28
+=======================================
+				View
+=======================================
+* View vw_despatch_order
++ sof_id
++ sof_name
++ sof_number
+
+2022-03-03
+=======================================
+				View
+=======================================
+* View vw_despatch_demurrage_invoice
++ ml.item_name AS invoice_status_name
+
+2022-03-06
+======================================
+             Table
+======================================
++ Table report_template
+
+======================================
+             View
+======================================
++ View vw_report_template
+
+=======================================
+2022-04-05
+				Table
+=======================================
+* Table quality_sampling
++ loading_type_id
+  (type:text)
+
+* Table barging_load_unload_document
++ return_cargo
+  (type:text)
+
+* Table barging_transaction
++ initial_draft_survey
+  (type: timestamp without time zone)
++ final_draft_survey
+  (type: timestamp without time zone)
+
+* Table shipping_transaction
+ + Rename berth_datetime => alongside_datetime
+ + Rename start_datetime => commenced_loading_datetime
+ + Rename end_datetime => completed_loading_datetime
+ + Rename unberth_datetime => cast_off_datetime
+ + initial_draft_survey
+   (type: timestamp without time zone)
+ + final_draft_survey
+   (type: timestamp without time zone)
+ 
+=======================================
+
+2022-04-06
+======= view ========
+* vw_barge
+
++ ct.business_partner_name,
++ LEFT JOIN contractor ct ON r.vendor_id = ct.id
+==============================================
+
+2022-04-11
+======== table ======
+*despatch_demurage_invoice
++ notes
+======= ===================
+
+2022-04-12
+========= Table =========
+* Table shipping_transaction
+ + Rename alongside_datetime => berth_datetime
+ + Rename commenced_loading_datetime => start_datetime
+ + Rename completed_loading_datetime => end_datetime
+ + Rename cast_off_datetime => unberth_datetime
+
+========== table & view ==========
+* sales_invoice & vw_sales_invoice
+	+ alias1, alias2, alias3, alias4, alias5, alias6, alias7, alias8, alias9, alias10, alias11, alias12, alias13, alias14, alias15 : text
+=====================================
+
+2022-04-13
+========== table & view ==========
+* production_transaction & waste_removal
+	+ tare (numeric)
+* waste_removal
+	+ capacity, tare: numeric
+
+========= Table =========
+* Table processing_transaction
+ + advance_contract_id1
+
+* Table hauling_transaction
+ + gross
+ + tare
+ + distance
+
+==============================
+
+2022-04-14
+========= Table ==========
+* Table rehandling_transaction
+ + advance_contract_id1
+
+2022-05-11 - 2022-05-13
+========= Table =========
++ Table hauling_plan
++ Table hauling_plan_monthly
++ Table hauling_plan_daily
++ Table hauling_plan_history
+
+========= View  =========
++ vw_hauling_plan
++ vw_hauling_plan_monthly
++ vw_hauling_plan_daily
++ vw_hauling_plan_history
+
+
+2022-05-16
+========= Table =========
++ Table hauling_plan_monthly_history
+
+========= View  =========
+* Add new View
++ View vw_hauling_plan_monthly_history
+
+2022-05-18
+========= View  =========
++ Update vw_hauling_plan
+
+2022-05-19
+========= Table  =========
++ production_plan
++ production_plan_monthly
++ production_plan_monthly_history
++ production_plan_daily
+
+========= View  =========
++ vw_production_plan
++ vw_production_plan_monthly
++ vw_production_plan_monthly_history
++ vw_production_plan_daily
+
+
+2022-05-25
+========= Table  =========
++ barging_plan
++ barging_plan_monthly
++ barging_plan_monthly_history
++ barging_plan_daily
+
+========= View  =========
++ vw_barging_plan
++ vw_barging_plan_monthly
++ vw_barging_plan_monthly_history
++ vw_barging_plan_daily
+
+2022-06-01
+========= Table  =========
++ shipping_instruction
++ shipping_instruction_asuransi
++ shipping_instruction_detail_survey
++ shipping_instruction_detail_survey_document
++ shipping_instruction_document_agent
++ shipping_instruction_pekerjaan_agent
++ shipping_instruction_tug_boat
++ shipping_instruction_to_company
++ shipping_instruction_stevedoring
+
+========= View  =========
++ vw_shipping_instruction
++ vw_shipping_instruction_asuransi
++ vw_shipping_instruction_detail_survey
++ vw_shipping_instruction_detail_survey_document
++ vw_shipping_instruction_document_agent
++ vw_shipping_instruction_pekerjaan_agent
++ vw_shipping_instruction_tug_boat
++ vw_shipping_instruction_to_company
++ vw_shipping_instruction_stevedoring
+
+2022-06-02
+========= sequence  =========
+shipping_instruction_number_seq
+
+
+2022-06-13
+========= tabel  =========
+* shipping_instruction_tug_boat
++ tug_id (type: text)
+
+* shipping_instruction_asuransi
++ tug_id (type: text)
+
+========= view  =========
+* vw_shipping_instruction_tug_boat
+change source tug_id (type: text)
+
+* vw_shipping_instruction_asuransi
+change source (type: text)
+
+2022-06-17
+========= tabel  =========
+* shipping_transaction_detail
++ barging_transaction_id
+
+========= view  =========
+* vw_shipping_transaction_detail
++ barging_transaction_id
++ barging_transaction_number
+
+==================================================
+                    2022-07-08
+==================================================
+====================== Table =====================
+* New Table
++ despatch_demurrage_debit_credit_note
+
+====================== View ======================
+* New View
++ vw_despatch_demurrage_debit_credit_note
+
+
+==================================================
+                    2022-07-09
+==================================================
+====================== View ======================
+* Update View
+* vw_draft_survey
++ quantity
+
+==================================================
+                    2022-07-10
+==================================================
+====================== View ======================
+* Update View
+* vw_despatch_demurrage_invoice
+* Update Field valuation_target_type
+
+
+==================================================
+                    2022-07-13
+==================================================
+====================== View ======================
+* Update Tabel
+* sampling_template_detail
+* add Field order
+* quality_sampling_analyte
+* add Field order
+
+* Update View
+* vw_sampling_template_detail
+* add Field order
+* vw_quality_sampling_analyte
+* add Field order

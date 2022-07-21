@@ -1,0 +1,9 @@
+G:\Projects\SmartMining\MCS\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+G:\Projects\SmartMining\MCS\Common\bin\Debug\netcoreapp3.1\Common.dll
+G:\Projects\SmartMining\MCS\Common\bin\Debug\netcoreapp3.1\Common.pdb
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.dll
+G:\Projects\SmartMining\MCS\Common\obj\Debug\netcoreapp3.1\Common.pdb

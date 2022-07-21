@@ -1,0 +1,15 @@
+{
+  "ProviderName": "Npgsql",
+  //"ConnectionString": "Host=173.212.237.65;Port=6432;Database=mcs;Username=admin;Password=Admin123#;Timeout=20;CommandTimeout=60;Pooling=false;No Reset On Close=true;",
+  "ConnectionString": "Host=172.16.10.93;Port=5432;Database=mcs;Username=admin;Password=Admin123#;Timeout=20;CommandTimeout=60;Pooling=false;No Reset On Close=true;",
+  "SchemaName": "public",
+  "IgnoreSchema": false,
+  "ClassPrefix": null,
+  "ClassSuffix": null,
+  "IncludeViews": true,
+  "ExcludePrefix": [],
+  "Namespace": "DataAccess.Repository",
+  "ExplicitColumns": true,
+  "TrackModifiedColumns": true,
+  "GenerateDTOs": false
+}

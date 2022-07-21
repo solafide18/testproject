@@ -1,0 +1,127 @@
+﻿<div class="flex-1" style="background: url(/img/backgrounds/wallpaper.jpeg) no-repeat center bottom fixed; background-size: cover;">
+    <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0">
+        <div class="row">
+            <div class="col col-md-6 col-lg-7 hidden-sm-down">
+                <h2 class="fs-xxl fw-500 mt-4 text-white">
+                    Smart Mining
+                </h2>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 ml-auto">
+                <h1 class="text-white fw-300 mb-3 d-sm-block d-md-none">
+                    Secure login
+                </h1>
+                <div class="card p-4 rounded-plus bg-faded">
+                    <form id="frm-login" novalidate="">
+                        <input type="hidden" id="return-url" name="ReturnUrl" value="@ViewBag.ReturnUrl">
+                        <div class="form-group">
+                            <label class="form-label" for="username">Username</label>
+                            <input type="text" id="username" name="Username" class="form-control form-control" placeholder="your id or email" required>
+                            <div class="invalid-feedback">No, you missed this one.</div>
+                            <div class="help-block">Your unique username to app</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" id="password" name="Password" class="form-control form-control" placeholder="password" required>
+                            <div class="invalid-feedback">Sorry, you missed this one.</div>
+                            <div class="help-block">Your password</div>
+
+                            <div class="mt-3 text-warning">@ViewBag.LoginStatus</div>
+                        </div>
+                        <div class="form-group text-left">
+                            <div class="custom-control custom-checkbox">
+                                <input type="hidden" name="SystemAdministration" value="false">
+                                <input type="checkbox" class="custom-control-input" id="is_sysadmin">
+                                <label class="custom-control-label" for="is_sysadmin"> System Administration </label>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-12 pr-lg-1 my-2">
+                                <button id="btn-login" type="submit" class="btn btn-info btn-block">Login</button>
+                            </div>
+
+                            <!--
+    <div class="col-lg-6 pl-lg-1 my-2">
+        <button id="btn-forgot-password" type="button" class="btn btn-outline-danger btn-block">Forgot Password</button>
+    </div>
+        -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute pos-bottom pos-left pos-right p-3 text-center text-white">
+            @DateTime.Now.Year © Smart Mining by&nbsp;<a href='https://www.adiraja-integrasi.com' class='text-white fw-500' title='www.adiraja-integrasi.com' target='_blank'>Adiraja Integrasi</a>, Member of EMS group
+        </div>
+    </div>
+</div>
+@section ScriptsBlock
+{
+    <script>
+        $("#is_sysadmin").change(function (event){
+            if ($("#is_sysadmin").is(':checked')) {
+                $('input[name="SystemAdministration"]').val(true);
+            }
+            else {
+                $('input[name="SystemAdministration"]').val(false);
+            }
+        });
+
+        /*
+        $("#btn-forgot-password").on("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            var url = "/Authentication/Login/ForgotPassword";
+            window.location = url;
+        });
+        */
+
+        $("#btn-login").click(function (event)
+        {
+            // Fetch form to apply custom Bootstrap validation
+            var form = $("#frm-login");
+            form.attr("method", "post");
+            form.attr("action", "/Authentication/Login/Submit");
+
+            if (form[0].checkValidity() === false)
+            {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            form.addClass('was-validated');
+            // Perform ajax submit here...
+        });
+
+        //$('#btn-login').on('click', function () {
+        //    $.ajax({
+        //        url: '/Authentication/Login/Submit',
+        //        //url: '/api/Authentication/Login/Submit',
+        //        method: 'POST',
+        //        contentType: 'application/json',
+        //        data: {
+        //            username: $('#username').val(),
+        //            password: $('#password').val(),
+        //            grant_type: 'password'
+        //        },
+        //        // When the request completes successfully, save the
+        //        // access token in the browser session storage and
+        //        // redirect the user to Data.html page. We do not have
+        //        // this page yet. So please add it to the
+        //        // EmployeeService project before running it
+        //        success: function (response) {
+        //            //sessionStorage.setItem("accessToken", response.access_token);
+        //            //window.location.href = "Data.html";
+        //            alert('Sukses');
+        //        },
+        //        // Display errors if any in the Bootstrap alert <div>
+        //        error: function (jqXHR) {
+        //            alert('Fail');
+        //            //$('#divErrorText').text(jqXHR.responseText);
+        //            //$('#divError').show('fade');
+        //        }
+        //    });
+        //});
+
+    </script>
+}

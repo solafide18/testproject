@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\solaf\.nuget\packages\;C:\Program Files (x86)\DevExpress 20.2\Components\Offline Packages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\solaf\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\DevExpress 20.2\Components\Offline Packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)select.htmltopdf.netcore\21.2.0\contentFiles\any\any\Select.Html.dep" Condition="Exists('$(NuGetPackageRoot)select.htmltopdf.netcore\21.2.0\contentFiles\any\any\Select.Html.dep')">
+      <NuGetPackageId>Select.HtmlToPdf.NetCore</NuGetPackageId>
+      <NuGetPackageVersion>21.2.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Select.Html.dep</TargetPath>
+      <Private>True</Private>
+      <Link>Select.Html.dep</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)dotnetcore.npoi\1.2.3\contentFiles\any\netstandard2.0\NOTICE.TXT" Condition="Exists('$(NuGetPackageRoot)dotnetcore.npoi\1.2.3\contentFiles\any\netstandard2.0\NOTICE.TXT')">
+      <NuGetPackageId>DotNetCore.NPOI</NuGetPackageId>
+      <NuGetPackageVersion>1.2.3</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>NOTICE.TXT</TargetPath>
+      <Private>True</Private>
+      <Link>NOTICE.TXT</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.8\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\3.1.8\build\netcoreapp2.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.core\2022.2.0\buildTransitive\FastReport.Core.props" Condition="Exists('$(NuGetPackageRoot)fastreport.core\2022.2.0\buildTransitive\FastReport.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.web\2022.2.0\buildTransitive\FastReport.Web.props" Condition="Exists('$(NuGetPackageRoot)fastreport.web\2022.2.0\buildTransitive\FastReport.Web.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.net.pro\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Net.Pro.props" Condition="Exists('$(NuGetPackageRoot)fastreport.net.pro\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Net.Pro.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.sqlite\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.SQLite.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.sqlite\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.SQLite.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.postgres\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Postgres.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.postgres\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Postgres.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.oracleodpcore\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.OracleODPCore.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.oracleodpcore\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.OracleODPCore.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.mysql\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.MySql.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mysql\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.MySql.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.mssql\2022.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mssql\2022.2.0\buildTransitive\netstandard2.0\FastReport.Data.MsSql.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.json\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Json.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.json\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Json.props')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.excel\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Excel.props" Condition="Exists('$(NuGetPackageRoot)fastreport.data.excel\2022.2.0\buildTransitive\netcoreapp3.1\FastReport.Data.Excel.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\solaf\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\solaf\.nuget\packages\microsoft.entityframeworkcore.tools\3.1.8</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgHangfire_SqlServer Condition=" '$(PkgHangfire_SqlServer)' == '' ">C:\Users\solaf\.nuget\packages\hangfire.sqlserver\1.7.14</PkgHangfire_SqlServer>
+  </PropertyGroup>
+</Project>
